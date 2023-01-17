@@ -21,9 +21,9 @@
 }
 
 @font-face {
-	font-family: 'Plaster';
-	src: url('/fonts/Plaster/Plaster.ttf') format('truetype');
-	font-weight: normal;
+	font-family: 'MuseoModerno';
+	src: url('/fonts/MuseoModerno/static/MuseoModerno-Bold.ttf') format('truetype');
+	font-weight: bold;
 	font-style: normal;
 }
 
@@ -32,10 +32,13 @@ body {
 	flex-direction: column;
 	background-color: var(--white);
 	font-family: 'Roboto';
+	color: var(--grey);
 }
 
+
 .h-post h1 {
-	font-family: 'Roboto Bold';
+	font-family: 'MuseoModerno';
+	color: var(--black);
 }
 
 .flex {
@@ -47,7 +50,7 @@ body {
 }
 
 a {
-	color: var(--silver);
+	color: var(--black);
 	text-decoration: none;
 }
 
@@ -79,9 +82,9 @@ footer {
 }
 
 .tag li {
-	background-color: var(--silver);
+	background-color: var(--black);
 	max-width: 100px;
-	border: 2px solid var(--silver);
+	border: 2px solid var(--black);
 	border-radius: 8px;
 }
 
@@ -92,14 +95,14 @@ footer {
 
 .articles {
 	display: flex;
-    flex-direction: column;
-    width: 80%;
-    align-self: center;
+  flex-direction: column;
+  width: 80%;
+  align-self: center;
 }
 
 .post {
-	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(13, 24, 33) 0px 0px 0px 3px;
-	border-radius: 25px;
+	background-color: var(--lime);
+	border-radius: 25%;
 	padding: 20px;
 	padding-bottom: 25px;
 }
@@ -113,12 +116,12 @@ footer {
 }
 
 .title {
-	font-family: 'Plaster';
+	font-family: 'MuseoModerno';
 	font-size: 35px;
 }
 
-.title-red {
-	color: var(--red);
+.title-highlight {
+	color: var(--blue);
 }
 
 .top-space {
@@ -129,11 +132,18 @@ footer {
 
 .about {
 	width: 70%;
-    border-radius: 8px;
-    border: 3px solid var(--black);
-    box-shadow: 35px 35px var(--lime);
-    margin-bottom: 40px;
-    max-width: 600px;
+  border-radius: 8px;
+  border: 3px solid var(--black);
+  box-shadow: 35px 35px var(--lime);
+  margin-bottom: 40px;
+  max-width: 600px;
+}
+
+.headline {
+	display: flex;
+	justify-content: center;
+	border-radius: 20px;
+	padding: 0px 15px;
 }
 
 .right {
@@ -143,18 +153,17 @@ footer {
 
 .date {
 	font-family: 'Roboto Light';
-    border: 2px solid var(--lime);
-    width FONT-WEIGHT: 200;
-    background-color: var(--lime);
-    border-radius: 8px;
-    padding: 5px;
-    max-width: 150px;
+  border: 2px solid var(--lime);
+  width FONT-WEIGHT: 200;
+  background-color: var(--lime);
+  border-radius: 8px;
+  padding: 5px;
+  max-width: 150px;
 }
 
-/* CSS */
 .button-56 {
   align-items: center;
-  background-color: var(--lime);
+  background-color: var(--green);
   border: 2px solid var(--black);
   border-radius: 8px;
   box-sizing: border-box;
@@ -177,7 +186,7 @@ footer {
 }
 
 .button-56:after {
-  background-color: #111;
+  background-color: var(--black);
   border-radius: 8px;
   content: "";
   display: block;
@@ -230,14 +239,31 @@ footer {
 	.border {
 		padding: 10px 20%;
 	}
+
+	.articles {
+		width: 50%;
+	}
+}
+
+.green {
+	background-color: var(--green);
+}
+
+.rose {
+	background-color: var(--rosa);
+}
+
+.blue {
+	background-color: var(--blue);
 }
 
 
 /* Colors */
  :root {
- 	--lime: #E0FF4F;
- 	--red: #FF0022;
- 	--black: #0D1821;
- 	--white: #FFFFFF;
- 	--silver: #736F72;
+ 	--green: #D1D646;
+ 	--rosa: #F97068;
+ 	--black: #212738;
+ 	--white: #EDF2EF;
+ 	--blue: #00A6A6;
+ 	--grey: #292929;
  }
